@@ -1,0 +1,54 @@
+name: Verify and publish fictional operations demo
+
+on:
+  push:
+    branches: [Website]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: harbor-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Domain checks
+        run: node --test tests/core.test.mjs
+      - name: Module syntax
+        run: node --check app.js
+      - name: Package only disconnected runtime
+        run: |
+          mkdir dist-demo
+          cp index.html main.css app.js core.mjs dist-demo/
+          test "$(find dist-demo -type f | wc -l)" -eq 4
+          grep -q "connect-src 'none'" dist-demo/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-demo
+          name: harbor-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish static artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: harbor-pages-${{ github.run_id }}-${{ github.run_attempt }}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="A fictional workshop operations demonstration: intake review, scheduling constraints, and attendance.">
+  <title>Harbor Workshops · Operations demo</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">H</span><div><strong>Harbor Workshops</strong><span>Community learning, thoughtfully organized.</span></div></div>
+    <button class="quiet" id="reset">Reset demo</button>
+  </header>
+  <div class="shell">
+    <aside class="sidebar">
+      <p class="eyebrow">Operations workspace</p>
+      <nav aria-label="Workspace views">
+        <button class="nav-button active" data-view="intake" aria-current="page"><span class="nav-number">01</span>Intake review</button>
+        <button class="nav-button" data-view="schedule"><span class="nav-number">02</span>Workshop schedule</button>
+        <button class="nav-button" data-view="attendance"><span class="nav-number">03</span>Attendance</button>
+      </nav>
+      <div class="demo-note"><span class="status-dot" aria-hidden="true"></span><strong>Fictional demo</strong><p>All people, places, and rules are invented. Changes reset when this page reloads.</p></div>
+      <details class="about"><summary>About this showcase</summary><p>A new generic demonstration informed by Cameron Boyle’s operations-product experience. The original portal, research, records, and integrations remain private.</p><p>AI-assisted implementation. No sign-in, uploads, or external services.</p></details>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div class="page-heading"><div><p class="eyebrow" id="section-label">Step 01 / Review</p><h1 id="page-title">A clear next step for every intake.</h1><p class="lede" id="page-description">Resolve an invented duplicate before it enters the schedule.</p></div><span class="workspace-tag">Sample workspace</span></div>
+      <section class="metrics" aria-label="Workspace totals" id="metrics"></section>
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <section id="content" aria-label="Current workspace"></section>
+      <footer class="page-footer"><span>Harbor Workshops is an invented organization.</span><span>Generic portfolio demonstration · Cameron Boyle</span></footer>
+    </main>
+  </div>
+  <noscript>This demonstration requires JavaScript. It uses only invented records.</noscript>
+</body>
+</html>

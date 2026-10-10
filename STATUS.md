@@ -1,12 +1,15 @@
 # Verification and scope
 
-Reviewed October 10, 2026. This is a separately constructed generic demo, using invented rules and fixtures. It is not the original GALS portal.
+Reviewed October 10, 2026. Harbor Workshops is a separately constructed generic demo with invented rules and fixtures. It is not the original GALS portal.
 
-- Nine domain tests passed with Node.js 24.16.0.
-- Browser review passed both explicit intake outcomes and keyboard activation; assignment of a last seat; rejection of a full workshop; rejection of a conflicting mentor update while preserving the schedule; attendance selection and filtered totals; reset; and fresh reload.
-- A 390 × 844 viewport was inspected. Document and body measured 375 pixels after accounting for the vertical scrollbar, with no page-level horizontal overflow. Attendance tables may scroll within their panel.
-- Browser logs in the reviewed local flows contained no errors. A content policy has `connect-src 'none'`; source contains no backend client or external service call. No full network trace was collected.
-- No dependencies need installation for the app. Node built-ins support the domain tests. System fonts are used.
-- The private hosted preview is a separate packaging/deployment step. Its exact version, source revision, and deployment evidence are recorded in the portfolio release report after deployment.
+- [Public demo](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/) is available without an application login.
+- Nine domain tests and app syntax checks passed locally with Node.js 24.16.0 and in clean GitHub CI.
+- [Source CI 38094157379](https://github.com/cameronjohnboyle2-hub/harbor-workshops-showcase/actions/runs/38094157379) and [Pages verification/deploy 38094264174](https://github.com/cameronjohnboyle2-hub/harbor-workshops-showcase/actions/runs/38094264174) succeeded at `ddb97802f9e70bac4c59288f7c46caf3ced9272b`.
+- The hosted artifact contains only `index.html`, `main.css`, `app.js`, and `core.mjs`. Public source contained 13 allowlisted files at that revision; all public blob hashes matched the reviewed local bytes. No original Git history was imported.
+- Hosted browser review passed both explicit intake outcomes and keyboard activation; assigning the last seat; rejecting a full workshop and a conflicting mentor update while preserving valid state; attendance selection and filtered totals; reset; and fresh reload.
+- A 390 × 844 viewport was inspected. Body/document width was 375 pixels after the vertical scrollbar, with no page-level horizontal overflow. Attendance tables may scroll within their panel. No physical-device acceptance is claimed.
+- Reviewed hosted flows produced no browser error logs. The content policy specifies `connect-src 'none'` and `form-action 'none'`. No full network trace was collected.
+- No app dependencies need installation. Tests use Node built-ins and the UI uses system fonts. The demo makes no model, voice, database, analytics, or other billable service requests in its application source.
+- A prior private Sites package remains separate; this GitHub Pages release does not change its audience or the original protected portal.
 
-This review did not query a production system, inspect private records, validate the original portal's database/access settings, measure adoption/impact, or test physical devices. Source reuse licensing is unselected. All examples and operational rules are newly invented, and no original research source, migrations, integrations, datasets, exports, or history were copied.
+This review did not query production systems, inspect private records, validate the original portal's database/access settings, measure adoption/impact, or test physical devices. No general source-reuse license is granted; obtain permission before reuse. No original research source, migrations, integrations, datasets, exports, or history were copied.

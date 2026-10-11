@@ -2,7 +2,7 @@
 
 A fictional operations workspace for reviewing intake, scheduling workshops, and recording attendance. Built as a separate AI-assisted portfolio reconstruction informed by Cameron Boyle's operations-product experience.
 
-[Try the demo](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/) · [Product case study](docs/CASE_STUDY.md) · [Architecture and boundaries](docs/ARCHITECTURE.md) · [Verification](STATUS.md)
+[Try the demo](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/) · [Demo case study](docs/CASE_STUDY.md) · [Field-operations case study](docs/FIELD_OPERATIONS_CASE_STUDY.md) · [Architecture and boundaries](docs/ARCHITECTURE.md) · [Verification](STATUS.md)
 
 ![Fictional intake workspace](docs/screenshots/intake.png)
 
@@ -52,4 +52,4 @@ Nine domain tests cover explicit duplicate disposition, capacity, availability, 
 
 No third-party source or bundled media is included; the UI uses system fonts. No general source-reuse license has been granted. Public availability is for portfolio review; obtain permission before reuse. Original protected work has its own rights and is not included.
 
-Lessons: make identity decisions explicit, validate an entire schedule before mutating state, and distinguish missing attendance from absence. Future work includes a field-reviewed Khmer interface, accessibility/user testing, and a separate rights-cleared operational case study with verified outcomes. Production authentication and integrations would require their own implementation and review.
+Lessons: make identity decisions explicit, validate an entire schedule before mutating state, and distinguish missing attendance from absence. Future work includes a field-reviewed Khmer interface, accessibility/user testing, and measured field outcomes. The separate [field-operations case study](docs/FIELD_OPERATIONS_CASE_STUDY.md) now documents Cameron's reported spreadsheet problem, staff/product work, and the evidence limits. Production authentication and integrations would require their own implementation and review.

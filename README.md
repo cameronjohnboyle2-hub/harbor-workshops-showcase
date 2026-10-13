@@ -1,8 +1,8 @@
 # Harbor Workshops
 
-**Mini showcase — NOT the actual GALS Operations Portal.** Harbor Workshops is a small fictional reconstruction of selected workflow ideas from Cameron Boyle’s much broader private operations product. It is not the original codebase, a replica, or the full feature set.
+**A fictional workflow demo based on my GALS Operations Portal work.** Harbor Workshops reconstructs three selected workflow ideas from my broader private operations product. The original codebase, operational records and full feature set remain private.
 
-The original portal combines staff intake, cohort/session planning, attendance, location matching and contacting history. Cameron describes it as his largest product project, consolidating work previously spread across roughly twenty spreadsheets. This mini showcase demonstrates only intake review, workshop assignment and attendance with invented data. [Explore the full original project and Cameron’s role](docs/FIELD_OPERATIONS_CASE_STUDY.md).
+The original portal combines staff intake, cohort/session planning, attendance, location matching and contacting history. It is my largest product project, bringing together work I estimate was previously spread across roughly twenty spreadsheets. This mini showcase demonstrates only intake review, workshop assignment and attendance with invented data. [Explore the original project and my role](docs/FIELD_OPERATIONS_CASE_STUDY.md).
 
 [Try the demo](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/) · [Demo case study](docs/CASE_STUDY.md) · [Field-operations case study](docs/FIELD_OPERATIONS_CASE_STUDY.md) · [Architecture and boundaries](docs/ARCHITECTURE.md) · [Verification](STATUS.md)
 
@@ -46,7 +46,7 @@ The original GALS portal, protected research, production integrations, records, 
 
 ## Contribution and evidence
 
-Cameron provided operations context, product direction, and publication/privacy constraints. Codex prepared the new generic scope, invented fixtures and rules, implementation, and checks. This is AI-assisted work, not solely hand-written source.
+I provided operations context, product direction, and publication/privacy constraints. Codex prepared the new generic scope, invented fixtures and rules, implementation, and checks. This is AI-assisted work, not solely hand-written source.
 
 Nine domain tests cover explicit duplicate disposition, capacity, availability, mentor conflicts, state preservation on rejection, attendance totals, invalid input, and reset isolation. Local browser review covered the three workflows and a phone-sized viewport. See `STATUS.md` for dated verification and limitations. No actual adoption, time savings, physical-device acceptance, or production reliability is claimed.
 
@@ -54,4 +54,4 @@ Nine domain tests cover explicit duplicate disposition, capacity, availability, 
 
 No third-party source or bundled media is included; the UI uses system fonts. No general source-reuse license has been granted. Public availability is for portfolio review; obtain permission before reuse. Original protected work has its own rights and is not included.
 
-Lessons: make identity decisions explicit, validate an entire schedule before mutating state, and distinguish missing attendance from absence. Future work includes a field-reviewed Khmer interface, accessibility/user testing, and measured field outcomes. The separate [field-operations case study](docs/FIELD_OPERATIONS_CASE_STUDY.md) now documents Cameron's reported spreadsheet problem, staff/product work, and the evidence limits. Production authentication and integrations would require their own implementation and review.
+Lessons: make identity decisions explicit, validate an entire schedule before mutating state, and distinguish missing attendance from absence. Future work includes a field-reviewed Khmer interface, accessibility/user testing, and measured field outcomes. The separate [field-operations case study](docs/FIELD_OPERATIONS_CASE_STUDY.md) describes the spreadsheet problem, my staff and product work, and the evidence limits. Production authentication and integrations would require their own implementation and review.

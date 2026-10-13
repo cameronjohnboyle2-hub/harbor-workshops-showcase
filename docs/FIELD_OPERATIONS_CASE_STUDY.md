@@ -1,50 +1,50 @@
-# GALS Operations Portal: from fragmented spreadsheets to a staff product
+# GALS Operations Portal: bringing field operations together
 
-**This case study describes the larger private original. Harbor Workshops is only a small fictional showcase of selected workflow ideas—not the actual portal, its codebase or its full capabilities.**
+**Cameron Boyle · Product direction, AI-assisted development and field operations**
 
-**Cameron Boyle · AI-assisted product development and field operations**
+A Cambodian business-training team needed to know who was scheduled, who attended and who needed follow-up. I led product direction and AI-assisted development of a private staff portal that connected those workflows, while managing four local staff and working with participants in Khmer.
 
-A small Cambodian workshop team needed a shared view of who was scheduled, who attended, and who needed follow-up. Cameron reports that this work had been spread across roughly twenty spreadsheets. He built a staff portal to bring the operational workflows together while helping the team use it in the field.
+[Explore the public workflow demo](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/)
+
+The demo, Harbor Workshops, is a separate fictional reconstruction of three workflow ideas. This case study describes the broader original portal, whose source and operational records remain private.
 
 ## The problem
 
-Attendance records, group assignments, venue/location information and contacting history were difficult to reconcile across separate sheets. A coordinator needed to answer practical questions: can this person attend the available session, which venue is suitable, did they attend, and what should staff do next?
+Attendance, group assignments, venue information and contact history were spread across separate sheets. Staff had to answer practical questions: can this person attend the available session, which venue works, did they attend, and what should we do next?
 
-The recruitment discussions also exposed a product constraint: people need concrete scheduling information before committing. A technically complete intake form does not solve a workflow that leaves its users uncertain about the next step.
+I learned that people needed concrete scheduling information before committing. An intake form alone could not solve a workflow that left the next step unclear.
 
-## Cameron's contribution
+## My contribution
 
-Cameron led the portal's product direction and AI-assisted implementation. He reports directly managing four Cambodian staff, coordinating workshops and working with participants in Khmer. His work combined field requirements, workflow design, data organization, troubleshooting and iterative improvements. Codex supported implementation and review; the portfolio does not claim that every line was written manually.
+I translated field requirements into workflows, organized data, troubleshot issues and refined the portal with staff feedback. I used Codex for AI-assisted implementation and review. The original uses React, TypeScript and Supabase/PostgreSQL for intake, cohort/session planning, attendance and follow-up.
 
-The original private source uses React, TypeScript and Supabase/PostgreSQL, with staff-facing workflows for intake, group/session organization, attendance and follow-up. Source and project discussions support this feature breadth. They do not independently establish current deployment security or measured productivity gains.
+My role combined building with operations: making the tool useful required listening to the people using it and helping them adopt the workflow.
 
-## Product decisions
+## Decisions that mattered
 
-| Staff need | Design decision | Intended benefit |
+| Staff need | My design decision | Why it mattered |
 | --- | --- | --- |
-| Find the next action without reconciling many sheets | Connect intake, group membership, sessions, attendance and follow-up in one workspace | Give staff a consistent operational view |
-| Make workable workshop assignments | Consider availability and venue/location context when organizing groups | Reduce avoidable scheduling confusion |
-| Keep attendance meaningful | Treat unrecorded attendance separately from present/absent and from later follow-up | Avoid turning missing information into a false outcome |
-| Know whom to contact next | Record contacting outcomes and the next staff action | Preserve continuity when work changes hands |
-| Resolve conflicting intake records | Require explicit review instead of assuming every apparent match is the same person | Keep uncertainty visible |
-| Limit access to private contact details | Separate ordinary operational records from restricted contact workflows | Make privacy part of the workflow design |
+| Find the next action | Connect intake, group membership, sessions, attendance and follow-up | Give staff one consistent operational view |
+| Make workable assignments | Consider availability and venue/location context | Surface scheduling constraints before staff commit |
+| Interpret attendance correctly | Keep unrecorded distinct from present and absent | Avoid treating missing information as an outcome |
+| Continue follow-up across staff | Record contact outcomes and the next action | Preserve context when work changes hands |
+| Handle conflicting intake | Require explicit review of apparent duplicates | Keep uncertainty visible and preserve original records |
+| Handle private contact details | Separate ordinary operations from restricted contact workflows | Make privacy part of the workflow |
 
-These are product decisions and design intentions. No percentage reduction in errors or hours saved is claimed.
+## Outcome and what I can support
 
-## Results and evidence
+The portal brought together workflows that I estimate had been spread across roughly 20 spreadsheets. It helped address attendance, contacting and group-organization problems and became my largest product project.
 
-Cameron reports that the portal solved substantial attendance, contacting and group-organization problems and became his largest product project. The supported outcome is consolidation of operational workflows previously scattered across about twenty spreadsheets. The four-person staff-management figure and the spreadsheet estimate are user-reported, rather than independently audited metrics.
+Team and spreadsheet counts are my approximate account of the work. I have not established measured before/after time savings or error reductions. Workshop counts in older career materials have different accounts, so I do not use them here as an audited outcome. Research findings are outside this case study.
 
-The reviewed source and historical chats show ongoing support and iteration. Measured before/after time, an independently confirmed active-staff count and a quantified reliability improvement remain unavailable. Workshop delivery counts in older career notes conflict, so this case study does not select one as an audited result. Research outcomes are outside the public case study.
+## Try a product decision
 
-## A public example of the decisions
+In the fictional demo, open Workshop schedule and attempt an assignment that conflicts with availability or capacity. The demo explains the rejected change and preserves the valid schedule. Record attendance to see totals calculated from the same assignments.
 
-[Harbor Workshops](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/) demonstrates three general lessons: explicit intake decisions, assignment constraints, and consistent attendance totals. It uses invented applicants, venues, capacities and rules. It is a separate reconstruction, with nine tested domain behaviors; its screens are not screenshots of the operational portal.
+Harbor uses invented applicants, venues, capacities and rules, with nine documented domain checks. Its screenshots and code are a reconstruction; they do not certify the original portal's production reliability or security.
 
-Try assigning an unavailable applicant or filling the final workshop seat. The demo explains a rejected change and preserves the previous valid state. Then record attendance and see totals computed from the same assignments.
+## What I learned
 
-## Lessons
+Useful software starts with the questions people struggle to answer. Making the next action clear, preserving uncertainty and iterating with field staff mattered as much as adding features.
 
-The strongest product work happened at the intersection of software and operations: identify what staff could not reliably answer, make the next action clear, and revise the workflow after real field feedback. Shared data also requires careful handling of uncertain identities, access boundaries and record preservation.
-
-The public release contains no participant records, contact details, operational exports, private endpoints, study methods or original Git history. The private portal and its original rights remain separate. This case study summarizes Cameron's operational contribution; it does not publish research or certify the original system's security.
+The public release includes no participant records, contact details, operational exports, private endpoints, study methods or original Git history. Original rights and access remain separate.

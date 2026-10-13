@@ -2,7 +2,7 @@
 
 ## Context
 
-Cameron Boyle built and supported operational tooling in the GALS Cambodia context. The original portal and research materials remain private. Harbor Workshops is independently constructed from generic workflow goals so an employer can inspect product and engineering decisions without private source, records, or study rules.
+I built and supported operational tooling for the GALS Cambodia project. The original portal and research materials remain private. Harbor Workshops is independently constructed from generic workflow goals so an employer can inspect product and engineering decisions without private source, records, or study rules.
 
 ## Product decisions
 
@@ -22,10 +22,10 @@ State reset makes the demo easy to explore and removes the need to collect ident
 
 ## Contributions and outcomes
 
-Cameron supplied context, product direction, and privacy constraints. Codex constructed the generic fixtures, implementation, documentation, and checks. The result demonstrates workflow judgment and AI-assisted implementation. Nine domain checks and local browser review establish behavior of the invented showcase. They do not establish original-system adoption, time savings, field reliability, or user acceptance.
+I supplied operations context, product direction, and privacy constraints. Codex constructed the generic fixtures, implementation, documentation, and checks. The result demonstrates workflow judgment and AI-assisted implementation. Nine domain checks and local browser review establish behavior of the invented showcase. They do not establish original-system adoption, time savings, field reliability, or user acceptance.
 
 Proposed future evaluation: observe coordinators completing intake, roster, and attendance tasks; measure task success, mistakes, and explanation clarity; compare missing-data interpretation before and after training. These are evaluation plans, not measured outcomes.
 
 ## Lessons and next steps
 
-Explicit ambiguity handling and rejection messages help an operator understand the next step. Validating before state changes prevents partial failures. A field-reviewed Khmer interface and actual usability sessions remain future work. The original GALS operational case study still needs shareable evidence of individual contribution, rollout, and outcomes.
+Explicit ambiguity handling and rejection messages help an operator understand the next step. Validating before state changes prevents partial failures. A field-reviewed Khmer interface and actual usability sessions remain future work. The [original GALS case study](FIELD_OPERATIONS_CASE_STUDY.md) explains my contribution and qualitative outcomes. Measured before/after results and independently confirmed adoption remain future evidence.

@@ -1,6 +1,8 @@
 # Harbor Workshops
 
-A fictional operations workspace for reviewing intake, scheduling workshops, and recording attendance. Built as a separate AI-assisted portfolio reconstruction informed by Cameron Boyle's operations-product experience.
+**Mini showcase — NOT the actual GALS Operations Portal.** Harbor Workshops is a small fictional reconstruction of selected workflow ideas from Cameron Boyle’s much broader private operations product. It is not the original codebase, a replica, or the full feature set.
+
+The original portal combines staff intake, cohort/session planning, attendance, location matching and contacting history. Cameron describes it as his largest product project, consolidating work previously spread across roughly twenty spreadsheets. This mini showcase demonstrates only intake review, workshop assignment and attendance with invented data. [Explore the full original project and Cameron’s role](docs/FIELD_OPERATIONS_CASE_STUDY.md).
 
 [Try the demo](https://cameronjohnboyle2-hub.github.io/harbor-workshops-showcase/) · [Demo case study](docs/CASE_STUDY.md) · [Field-operations case study](docs/FIELD_OPERATIONS_CASE_STUDY.md) · [Architecture and boundaries](docs/ARCHITECTURE.md) · [Verification](STATUS.md)
 

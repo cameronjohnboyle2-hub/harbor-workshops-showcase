@@ -1,4 +1,6 @@
-# From fragmented spreadsheets to a field-operations portal
+# GALS Operations Portal: from fragmented spreadsheets to a staff product
+
+**This case study describes the larger private original. Harbor Workshops is only a small fictional showcase of selected workflow ideas—not the actual portal, its codebase or its full capabilities.**
 
 **Cameron Boyle · AI-assisted product development and field operations**
 
